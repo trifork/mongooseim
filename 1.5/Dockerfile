@@ -2,7 +2,7 @@ FROM ubuntu:14.04
 
 MAINTAINER Martin Westergaard Lassen <mwl@trifork.com>
 
-ADD http://packages.erlang-solutions.com/site/esl/mongooseim/FLAVOUR_1_main/mongooseim_1.5.0-1~ubuntu~precise_amd64.deb /tmp/mongooseim.deb
+ADD http://packages.erlang-solutions.com/site/esl/mongooseim/FLAVOUR_1_main/mongooseim_1.5.0-1~ubuntu~trusty_amd64.deb /tmp/mongooseim.deb
 
 RUN apt-get update && \
     apt-get install -y \
