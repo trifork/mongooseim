@@ -1,8 +1,8 @@
-FROM ubuntu:utopic
+FROM ubuntu:trusty
 
 MAINTAINER Martin Westergaard Lassen <mwl@trifork.com>
 
-ADD http://packages.erlang-solutions.com/site/esl/mongooseim/FLAVOUR_1_main/mongooseim_1.5.1-1~ubuntu~utopic_amd64.deb /tmp/mongooseim.deb
+ADD https://packages.erlang-solutions.com/erlang/mongooseim/FLAVOUR_1_main/mongooseim_1.5.1-2~ubuntu~trusty_amd64.deb /tmp/mongooseim.deb
 
 RUN apt-get update && \
     apt-get install -y \
